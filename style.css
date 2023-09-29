@@ -1,0 +1,944 @@
+  @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@600&family=Poppins:wght@400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Martian Mono', monospace;
+    font-family: 'Poppins', sans-serif;
+    
+}
+header{
+    position: relative;
+    
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(202, 8, 8);
+    padding-bottom: 15px;
+    list-style: none;
+    border-bottom: 2px solid white;
+}
+nav li:hover{
+    background-color: rgb(143, 8, 8);
+}
+nav ul{
+    margin-left: 280px;
+    
+}
+nav li{
+    background-color: rgb(168, 8, 8);
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.logo{
+    background-color: black;
+    padding-bottom: 0px;
+    
+}
+#foto{
+    top: 5px;
+    left: 90px;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+}
+
+.icones{
+    margin-top: 40px;
+    margin-left: 300px;
+}
+
+.crf img{
+    width: 70px;
+    height: 70px;
+    
+}
+.icones img{
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+}
+.menu{
+    color: white;
+    list-style: none;
+    margin-left: 240px;
+    padding: 10px;
+}
+.menu li{
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu li:hover{
+    color: red;
+    
+}
+main{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(19, 19, 19);
+    padding: 80px;
+}
+.conteudo{
+    color: white;
+    margin-top: 0px;
+    text-align: left;
+    
+}
+.conteudo h1{
+    font-size: 50px ;
+    padding-bottom: 15px;
+}
+.conteudo h2{
+    padding-bottom: 20px;
+}
+.conteudo p{
+    color: rgb(255, 255, 255);
+}
+.box {
+    color: rgb(255, 255, 255);
+    background-color: rgba(12, 12, 12, 1.9);
+    border-radius: 30px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 20px;
+    margin-left: 90px;
+}
+
+fieldset {
+    border: 5px solid rgb(255, 0, 0);
+    border-radius: 20px;
+    padding: 5px 30px 20px 30px;
+}
+.inputbox {
+    position: relative;
+    padding-top: 20px;
+}
+
+.inputuser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(255, 0, 0);
+    outline: none;
+    color: rgb(255, 0, 0);
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelinput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+    margin-top: 20px;
+}
+
+.inputuser:focus~.labelinput,
+.inputuser:valid~.labelinput {
+    top: -15px;
+    font-size: 12px;
+    color: rgb(255, 0, 0);
+}
+legend {
+    font-family: 'Fira Sans', sans-serif;
+    border: 1px solid rgb(255, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid rgb(255, 0, 0);
+    text-align: center;
+    margin-left: -40px;
+    color: white;
+}
+#submit {
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgb(139, 3, 3) 100%);
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    
+}
+#submit:hover {
+    background: linear-gradient(90deg, rgb(172, 4, 4) 0%, rgb(87, 2, 2) 100%);
+}
+
+footer{
+    border-top: 1px solid white ;
+    background-color: rgb(7, 7, 7);
+    padding: 40px;
+    
+}
+
+.ft{
+    margin-left: auto;
+}
+.ft img {
+    
+    height: 160px;
+    width: 160px;
+    
+}
+.txt {
+    font-size: 11px;
+    color: white;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-right: auto;
+}
+article{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+@media screen and (max-width: 1239px) {
+    .icones{
+       
+        margin-left: 200px;
+    }
+    nav ul{
+        margin-left: 280px;
+        
+    }
+    nav li{
+        background-color: rgb(168, 8, 8);
+        display: inline-block;
+        margin-left: 20px;
+        margin-top: 30px;
+        font-size: 15px;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .menu{
+        color: white;
+        list-style: none;
+        margin-left: 240px;
+        padding: 10px;
+    }
+    .menu li{
+        cursor: pointer;
+        font-size: 13px;
+        display: inline-block;
+        margin-right: 20px;
+    }
+    .conteudo h1{
+        font-size: 40px ;
+        padding-bottom: 15px;
+    }
+    .conteudo h2{
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    .conteudo p{
+        font-size: 14px;
+        color: rgb(255, 255, 255);
+    }
+}
+@media screen and (max-width: 1121px) {
+    .icones{
+       
+        margin-left: 200px;
+    }
+    nav ul{
+        margin-left: 280px;
+        
+    }
+    nav li{
+        background-color: rgb(168, 8, 8);
+        display: inline-block;
+        margin-left: 20px;
+        margin-top: 30px;
+        font-size: 15px;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .menu{
+        color: white;
+        list-style: none;
+        margin-left: 210px;
+        padding: 10px;
+    }
+    .menu li{
+        cursor: pointer;
+        font-size: 13px;
+        display: inline-block;
+        margin-right: 20px;
+    }
+    .conteudo{
+        margin-top: 50px;
+    }
+    .conteudo h1{
+        font-size: 35px ;
+        padding-bottom: 15px;
+    }
+    .conteudo h2{
+        font-size: 17px;
+        padding-bottom: 20px;
+    }
+    .conteudo p{
+        font-size: 12px;
+        color: rgb(255, 255, 255);
+    }
+}
+@media screen and (max-width: 1091px) {
+    .icones{
+       
+        margin-left: 110px;
+    }
+    nav ul{
+        margin-left: 170px;
+        
+    }
+    nav li{
+        background-color: rgb(168, 8, 8);
+        display: inline-block;
+        margin-left: 20px;
+        margin-top: 30px;
+        font-size: 15px;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .menu{
+        color: white;
+        list-style: none;
+        margin-left: 170px;
+        padding: 10px;
+    }
+    .menu li{
+        cursor: pointer;
+        font-size: 13px;
+        display: inline-block;
+        margin-right: 20px;
+    }
+    .conteudo{
+        margin-top: 50px;
+    }
+    .conteudo h1{
+        font-size: 35px ;
+        padding-bottom: 15px;
+    }
+    .conteudo h2{
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+    .conteudo p{
+        font-size: 11px;
+        color: rgb(255, 255, 255);
+    }
+
+    #foto{
+        top: 5px;
+        left: 40px;
+        width: 130px;
+        height: 130px;
+        position: absolute;
+}
+}
+@media screen and (max-width: 1051px) {
+    .icones{
+       
+        margin-left: 110px;
+    }
+    nav ul{
+        margin-left: 170px;
+        
+    }
+    nav li{
+        background-color: rgb(168, 8, 8);
+        display: inline-block;
+        margin-left: 20px;
+        margin-top: 30px;
+        font-size: 15px;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .menu{
+        color: white;
+        list-style: none;
+        margin-left: 170px;
+        padding: 10px;
+    }
+    .menu li{
+        cursor: pointer;
+        font-size: 11px;
+        display: inline-block;
+        margin-right: 20px;
+    }
+    .conteudo h1{
+        font-size: 35px ;
+        padding-bottom: 15px;
+    }
+    .conteudo h2{
+        font-size: 14px;
+        padding-bottom: 20px;
+    }
+    .conteudo p{
+        font-size: 10px;
+        color: rgb(255, 255, 255);
+    }
+
+    #foto{
+        top: 5px;
+        left: 40px;
+        width: 130px;
+        height: 130px;
+        position: absolute;
+}
+}
+@media screen and (max-width: 958px) {
+    .icones{
+       
+        margin-left: 110px;
+    }
+    nav ul{
+        margin-left: 170px;
+        
+    }
+    nav li{
+        background-color: rgb(168, 8, 8);
+        display: inline-block;
+        margin-left: 20px;
+        margin-top: 30px;
+        font-size: 15px;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .menu{
+        color: white;
+        list-style: none;
+        margin-left: 170px;
+        padding: 10px;
+    }
+    .menu li{
+        cursor: pointer;
+        font-size: 11px;
+        display: inline-block;
+        margin-right: 20px;
+    }
+    main{
+        display: grid;
+        background-color: rgb(19, 19, 19);
+        padding: 15px;
+        
+    }
+    .conteudo{
+        text-align: center;
+    }
+    .conteudo h1{
+        font-size: 40px ;
+        padding-bottom: 15px;
+    }
+    .conteudo h2{
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    .conteudo p{
+        font-size: 13px;
+        color: rgb(255, 255, 255);
+    }
+
+    #foto{
+        top: 5px;
+        left: 40px;
+        width: 130px;
+        height: 130px;
+        position: absolute;
+    }
+    
+    .box{
+        margin: 40px 200px 40px 200px;
+        
+        
+    }
+    fieldset {
+        border: 5px solid rgb(255, 0, 0);
+        border-radius: 20px;
+        padding: 50px;
+    }
+}
+@media screen and (max-width: 838px) {
+    .icones{
+       
+        margin-left: 30px;
+    }
+    nav ul{
+        margin-left: 180px;
+        
+    }
+    nav li{
+        background-color: rgb(168, 8, 8);
+        display: inline-block;
+        margin-left: 20px;
+        margin-top: 30px;
+        font-size: 12px;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .menu{
+        color: white;
+        list-style: none;
+        margin-left: 170px;
+        padding: 10px;
+    }
+    .menu li{
+        cursor: pointer;
+        font-size: 11px;
+        display: inline-block;
+        margin-right: 20px;
+    }
+    main{
+        display: grid;
+        background-color: rgb(19, 19, 19);
+        padding: 15px
+        
+    }
+    .conteudo{
+        text-align: center;
+    }
+    .conteudo h1{
+        font-size: 40px ;
+        padding-bottom: 15px;
+    }
+    .conteudo h2{
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    .conteudo p{
+        font-size: 13px;
+        color: rgb(255, 255, 255);
+    }
+
+    #foto{
+        top: 5px;
+        left: 40px;
+        width: 130px;
+        height: 130px;
+        position: absolute;
+    }
+    
+    .box{
+        margin: 40px 190px 40px 190px;
+        
+        
+    }
+    fieldset {
+        border: 5px solid rgb(255, 0, 0);
+        border-radius: 20px;
+        padding: 50px;
+    }
+}
+@media screen and (max-width: 774px) {
+    .icones{
+       
+        margin-left: 30px;
+    }
+    nav ul{
+        margin-left: 180px;
+        
+    }
+    nav li{
+        background-color: rgb(168, 8, 8);
+        display: inline-block;
+        margin-left: 20px;
+        margin-top: 30px;
+        font-size: 12px;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .menu{
+        color: white;
+        list-style: none;
+        margin-left: 170px;
+        padding: 10px;
+    }
+    .menu li{
+        cursor: pointer;
+        font-size: 11px;
+        display: inline-block;
+        margin-right: 20px;
+    }
+    main{
+        display: grid;
+        background-color: rgb(19, 19, 19);
+        padding: 15px;
+        
+    }
+    .conteudo{
+        text-align: center;
+    }
+    .conteudo h1{
+        font-size: 30px ;
+        padding-bottom: 15px;
+    }
+    .conteudo h2{
+        font-size: 15px;
+        padding-bottom: 20px;
+    }
+    .conteudo p{
+        font-size: 11px;
+        color: rgb(255, 255, 255);
+    }
+
+    #foto{
+        top: 5px;
+        left: 40px;
+        width: 130px;
+        height: 130px;
+        position: absolute;
+    }
+    
+    .box{
+        margin: 40px 130px 40px 130px;
+        
+        
+    }
+    fieldset {
+        border: 5px solid rgb(255, 0, 0);
+        border-radius: 20px;
+        padding: 50px;
+    }
+}
+@media screen and (max-width: 708px) {
+    .icones{
+        margin-left: 30px;
+    }
+    .icones img{
+        height: 15px;
+        width: 15px;
+        padding: 0px;
+    }
+    nav ul{
+        margin-left: 100px;
+        
+    }
+    nav li{
+        background-color: rgb(168, 8, 8);
+        display: inline-block;
+        margin-left: 20px;
+        margin-top: 30px;
+        font-size: 12px;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .menu{
+        color: white;
+        list-style: none;
+        margin-left: 100px;
+        padding: 10px;
+    }
+    .menu li{
+        cursor: pointer;
+        font-size: 11px;
+        display: inline-block;
+        margin-right: 20px;
+    }
+    main{
+        display: grid;
+        background-color: rgb(19, 19, 19);
+        padding: 15px
+        
+    }
+    .conteudo{
+        text-align: center;
+    }
+    .conteudo h1{
+        font-size: 30px ;
+        padding-bottom: 15px;
+    }
+    .conteudo h2{
+        font-size: 15px;
+        padding-bottom: 20px;
+    }
+    .conteudo p{
+        font-size: 11px;
+        color: rgb(255, 255, 255);
+    }
+
+    #foto{
+        top: 15px;
+        left: 10px;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+    }
+    
+    .box{
+        margin: 40px 90px 40px 90px;
+        
+        
+    }
+    fieldset {
+        border: 5px solid rgb(255, 0, 0);
+        border-radius: 20px;
+        padding: 50px;
+    }
+}
+@media screen and (max-width: 590px) {
+    .icones{
+        margin-left: 30px;
+        display: none;
+    }
+    .icones img{
+        height: 15px;
+        width: 15px;
+        padding: 0px;
+    }
+    nav ul{
+        margin-left: 100px;
+        
+    }
+    nav li{
+        background-color: rgb(168, 8, 8);
+        display: inline-block;
+        margin-left: 20px;
+        margin-top: 30px;
+        font-size: 10px;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .menu{
+        color: white;
+        list-style: none;
+        margin-left: 100px;
+        padding: 10px;
+    }
+    .menu li{
+        cursor: pointer;
+        font-size: 10px;
+        display: inline-block;
+        margin-right: 10px;
+    }
+    main{
+        display: grid;
+        background-color: rgb(19, 19, 19);
+        padding: 15px
+        
+        
+    }
+    .conteudo{
+        text-align: center;
+    }
+    .conteudo h1{
+        font-size: 25px ;
+        padding-bottom: 15px;
+    }
+    .conteudo h2{
+        font-size: 13px;
+        padding-bottom: 20px;
+    }
+    .conteudo p{
+        font-size: 9px;
+        color: rgb(255, 255, 255);
+    }
+
+    #foto{
+        top: 15px;
+        left: 10px;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+    }
+    
+    .box{
+        margin: 40px 50px 40px 50px;
+        
+        
+    }
+    fieldset {
+        border: 5px solid rgb(255, 0, 0);
+        border-radius: 20px;
+        padding: 50px;
+    }
+    .ft img{
+        display: none;
+    }
+}
+@media screen and (max-width: 433px) {
+    .icones{
+        margin-left: 30px;
+        display: none;
+    }
+    .icones img{
+        height: 15px;
+        width: 15px;
+        padding: 0px;
+    }
+    nav ul{
+        margin-left: 100px;
+        
+    }
+    nav li{
+        background-color: rgb(168, 8, 8);
+        display: inline-block;
+        margin-left: 20px;
+        margin-top: 30px;
+        font-size: 10px;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .menu{
+        color: white;
+        list-style: none;
+        margin-left: 100px;
+        padding: 10px;
+    }
+    .menu li{
+        cursor: pointer;
+        font-size: 10px;
+        display: inline-block;
+        margin-right: 5px;
+    }
+    main{
+        display: grid;
+        background-color: rgb(19, 19, 19);
+        padding:15px;
+        text-align: left;
+        
+    }
+    .conteudo h1{
+        font-size: 25px ;
+        padding-bottom: 15px;
+    }
+    .conteudo h2{
+        font-size: 13px;
+        padding-bottom: 20px;
+    }
+    .conteudo p{
+        font-size: 9px;
+        color: rgb(255, 255, 255);
+    }
+
+    #foto{
+        top: 15px;
+        left: 10px;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+    }
+    
+    .box{
+        margin: 40px 50px 20px 50px;
+    }
+    fieldset {
+        border: 5px solid rgb(255, 0, 0);
+        border-radius: 20px;
+        padding: 50px;
+    }
+    .ft img{
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 403px) {
+    .icones{
+        margin-left: 30px;
+        display: none;
+    }
+    .icones img{
+        height: 15px;
+        width: 15px;
+        padding: 0px;
+    }
+    nav ul{
+        margin-left: 95px;
+        
+    }
+    nav li{
+        background-color: rgb(168, 8, 8);
+        display: inline-block;
+        margin-left: 8px;
+        margin-top: 30px;
+        font-size: 9px;
+        color: white;
+        padding: 8px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .menu{
+        color: white;
+        list-style: none;
+        margin-left: 70px;
+        padding: 10px;
+    }
+    .menu li{
+        cursor: pointer;
+        font-size: 8px;
+        display: inline-block;
+        margin-right: 5px;
+    }
+    main{
+        display: grid;
+        background-color: rgb(19, 19, 19);
+        padding:15px;
+        text-align: left;
+        
+    }
+    .conteudo h1{
+        font-size: 25px ;
+        padding-bottom: 15px;
+    }
+    .conteudo h2{
+        font-size: 13px;
+        padding-bottom: 20px;
+    }
+    .conteudo p{
+        font-size: 9px;
+        color: rgb(255, 255, 255);
+    }
+
+    #foto{
+        top: 15px;
+        left: 10px;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+    }
+    
+    .box{
+        margin: 40px 30px 20px 30px;
+    }
+    fieldset {
+        border: 5px solid rgb(255, 0, 0);
+        border-radius: 20px;
+        padding: 50px;
+    }
+    .ft img{
+        display: none;
+    }
+    
+}
